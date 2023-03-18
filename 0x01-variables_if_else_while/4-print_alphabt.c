@@ -2,21 +2,21 @@
 /**
  * main - entry point
  *
- * Return: returns zero always
+ * Return: alway returns 0
  *
  */
 int main(void)
 {
-    char x;
+	char x;
 
-    for (x = 'a'; x <= 'z'; x++)
-    {
-        if (x == 'q' || x == 'e')
-        {
-            continue;
-        }
-        putchar(x);
-    }
-    putchar('\n');
-    return (0);
+	for (x = 'a'; x <= 'z' ; x++)
+	{
+		if (x == 'q' || x == 'e')
+		{
+			continue;
+		}
+		putchar(x);
+	}
+	putchar('\n');
+	return (0);
 }
