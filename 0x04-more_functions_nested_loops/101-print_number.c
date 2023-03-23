@@ -4,24 +4,23 @@
  * print_number - prints number
  *
  * @n: integer to print
+ *
+ * Return: returns void
  */
 void print_number(int n)
 {
-	unsigned int x = n;
+	unsigned int j;
 
+	j = n;
 	if (n < 0)
 	{
-		n *= -1;
-		x = n;
-		_putchar("_");
+		_putchar(45);
+		j = -n;
 	}
-
-	x /= 10;
-
-	if (k != 0)
+	if (x / 10)
 	{
-		print_number(k);
+		print_number(x / 10);
 	}
-	_putchar((unsigned int) n % 10 + "0");
+	_putchar((x % 10) + '0');
 }
 
