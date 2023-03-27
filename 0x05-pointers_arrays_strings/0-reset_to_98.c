@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - 
+ * reset_to_98 - check code
  *
+ * @n: integer to replace using a pointer
  * Return: always 0
  */
 
