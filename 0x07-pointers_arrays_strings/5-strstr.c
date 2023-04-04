@@ -1,25 +1,5 @@
 #include "main.h"
 #include <stddef.h>
-
-/**
- * _strcmp - string to compare
- * @s1: first string
- * @s2: second string
- *
- * Return: value of string
- */
-
-int _strcmp(char *s1, char *s2)
-{
-	int i = 0;
-
-	while (s1[i] - s2[i] == 0 && s1[i] != '\0')
-	{
-		i++;
-	}
-	return (s1[i] - s2[i]);
-}
-
 /**
  * _strstr - locates a substring
  * @haystack: string to be searched
@@ -29,20 +9,18 @@ int _strcmp(char *s1, char *s2)
 
 char *_strstr(char *haystack, char *needle)
 {
-	int x = 0;
-
-	while (needle[x] != '\0')
-		x++;
-
-	while (*haystack != '\0')
+	while (*haystack)
 	{
-		if (_strcmp(haystack, needle) == 0)
+		while (*haystack == *needle)
+		{
+			haystack++;
+			needle++;
+		}
+		if (*needle == '\0')
 		{
 			return (haystack);
 		}
-		haystack++;
-
+		haystack = haystack + 1;
 	}
 	return (NULL);
-
 }
