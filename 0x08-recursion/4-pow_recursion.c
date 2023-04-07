@@ -7,7 +7,6 @@
  * Return: returns the pow or -1 error
  *
  */
-
 int _pow_recursion(int x, int y)
 {
 	if (y < 0)
@@ -18,9 +17,5 @@ int _pow_recursion(int x, int y)
 	{
 		return (x * _pow_recursion(x, y - 1));
 	}
-	else
-	{
-		return (1);
-	}
-
+	return (1);
 }
