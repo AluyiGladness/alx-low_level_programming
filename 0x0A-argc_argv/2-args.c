@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include "main.h"
- /**
- * main - prints all the arguments given by the user
- * @argc: argument count of programme
- * @argv: this is the vector of the arguments
+/**
+ * main - this prints out all the arguments it receives
+ * @argc: argument count
+ * @argv: vector of the arguments
  * Return: 0
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int count;
 
