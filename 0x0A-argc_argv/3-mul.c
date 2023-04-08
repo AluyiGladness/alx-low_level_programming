@@ -12,7 +12,8 @@
 int main(int argc, char *argv[])
 {
 	int i = 0;
-	if (argc >= 3)
+
+	if (argc > i)
 	{
 		i++;
 		printf("%d\n", atoi(argv[i]) * atoi(argv[i + 1]));
