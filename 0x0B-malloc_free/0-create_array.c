@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  * create_array - creates an array of chars that are initialized with the char c
  * @size: array size
@@ -21,7 +22,7 @@ char *create_array(unsigned int size, char c)
 	for (i = 0; i < size; i++)
 		k[i] = c;
 
-	return (t);
+	return (k);
 
 }
 
