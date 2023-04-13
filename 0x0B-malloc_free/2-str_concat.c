@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+<<<<<<< HEAD
  * str_concat - concatenates 2 strings
  *
  * @s1: first pointer
@@ -48,3 +49,21 @@ char *str_concat(char *s1, char *s2)
 	c[l1 + i] = '\0';
 	return (c);
 }
+=======
+ * str_concat - concatenate two strings
+ * @s1: first string
+ * @s2: second string
+ * Return: points to a newly allocated memory
+ */
+char *str_concat(char *s1, char *s2)
+{
+
+
+
+
+
+
+
+
+
+>>>>>>> 593254fc2801c4a439dce010223aafb0a88dd5b9
