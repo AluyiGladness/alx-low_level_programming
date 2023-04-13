@@ -5,11 +5,11 @@
  * @b: amount of bytes.
  *
  * Return: a pointer to the memory allocated
- * if malloc fails, termination value is equal to 98.
+ * it returns 98 if malloc is NULL
  */
 void *malloc_checked(unsigned int b)
 {
-	char *t;
+	void *t;
 
 	t = malloc(b);
 	if (t == NULL)
