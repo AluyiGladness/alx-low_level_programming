@@ -1,11 +1,11 @@
 #include "lists.h"
-
+#include <string.h>
 /**
  * add_node - adds a node to the start of a linked list
  * @head: points to the head of the list
  * @str: string to be used as content of the node
  *
- * Return: address of the newly added node
+ * Return: address of the new node
  */
 list_t *add_node(list_t **head, const char *str)
 {
@@ -29,7 +29,7 @@ list_t *add_node(list_t **head, const char *str)
 }
 
 /**
- * _strlength - counts string length
+ * _strlength - counts the length of string
  * @str: string to be counted
  *
  * Return: string length
