@@ -2,33 +2,36 @@
 /**
  * add_node_end - adds a node to the end of a linked list
  * @head: pointer to the head of the list
- * @str: string to be used as content of the newly added node
+ * @str: string to be used as content of the newly_addedly added node
  *
- * Return: address of the newly added node
+ * Return: address of the newly_addedly added node
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new;
-	list_t *csr = *head;
+	list_t *newly_added;
+	list_t *ptr = *head;
+	char *duplicate;
 
-	new = malloc(sizeof(list_t));
-	if (new != NULL)
+	duplicate = strdup(str);
+
+	newly_added = malloc(sizeof(list_t));
+	if (newly_added != NULL)
 	{
-		new->str = strdup(str);
-		new->len = _strlength(str);
-		new->next = NULL;
+		newly_added->str = duplicate;
+		newly_added->len = _strlength(str);
+		newly_added->next = NULL;
 	}
 	else
 		return (NULL);
-	if (csr != NULL)
+	if (ptr != NULL)
 	{
-		while (csr->next != NULL)
-			csr = cursor->next;
-		csr->next = new;
+		while (ptr->next != NULL)
+			ptr = ptr->next;
+		ptr->next = newly_added;
 	}
 	else
-		*head = new;
-	return (new);
+		*head = newly_added;
+	return (newly_added);
 }
 /**
  * _strlength - counts the length of a string
