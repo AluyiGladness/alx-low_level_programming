@@ -30,7 +30,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	present_node = *head;
 	while (present_node->next != NULL)
-		present_node = current_node->next;
+		present_node = present_node->next;
 
 	present_node->next = newly_addednode;
 
