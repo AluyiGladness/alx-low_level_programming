@@ -11,6 +11,9 @@ int sum_listint(listint_t *head)
 	int total = 0;
 	listint_t *present_node = head;
 
+	if (present_node == NULL)
+		return (0);
+
 	while (present_node != NULL)
 	{
 		total += present_node->n;
