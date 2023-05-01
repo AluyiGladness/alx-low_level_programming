@@ -6,7 +6,7 @@
  *
  * Return: total of all data (n) or 0 when the list is empty
  */
-int total_listint(listint_t *head)
+int sum_listint(listint_t *head)
 {
 	int total = 0;
 	listint_t *present_node = head;
