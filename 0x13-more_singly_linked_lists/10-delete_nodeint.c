@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * delete_nodeint_at_index - delete a node at a particular index
  * of a linked list.
