@@ -11,10 +11,6 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
-<<<<<<< HEAD
-=======
- *
->>>>>>> 3f7eda7fcac5354f4e4d10622586066b4ad0ccc1
  */
 typedef struct listint_s
 {
