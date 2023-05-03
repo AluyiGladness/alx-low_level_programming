@@ -5,7 +5,8 @@
  * @head: Pointer that points to the head node
  * @index: node Index, starting at 0.
  *
- * Return: returns a pointer to a particular node or NULL if the node does not exist.
+ * Return: returns a pointer to a particular node
+ * or NULL if the node does not exist.
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
@@ -14,7 +15,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	present_node = head;
 	index_of_node = 0;
-	
+
 	if (head == NULL)
 		return (NULL);
 
