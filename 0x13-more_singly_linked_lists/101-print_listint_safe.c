@@ -8,7 +8,7 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *h = head;
+	const listint_t *present, *h = head;
 	size_t counter = 0;
 
 	while (h && h > h->next)
