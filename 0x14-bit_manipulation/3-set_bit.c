@@ -9,14 +9,14 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int *keep;
+	unsigned long int p;
 
-	if (index >= sizeof(unsigned long int) * 8)
+	if (index > 64)
 		return (-1);
 
-	keep = 1ul << index;
-
-	*n |= keep;
+	for (y = 1; index > 0; index--, y *= 2)
+		;
+	*n += y;
 
 	return (1);
 }
