@@ -12,6 +12,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int number = 0;
 	const char *j = b;
+
 	if (b == NULL)
 		return (0);
 
